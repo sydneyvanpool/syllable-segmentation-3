@@ -4,7 +4,9 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+   const base = '/syllable-segmentation-3/';
   return {
+    base: base,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
